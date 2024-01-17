@@ -53,4 +53,10 @@ public class EmployeeController {
         return service.deleteEmployeeById(id);
     }
 
+
+    @PostMapping("/seed")
+    public Iterable<Employee> seedEmployees(){
+        return service.seedEmployees();
+    }
+
 }
